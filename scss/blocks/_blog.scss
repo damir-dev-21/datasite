@@ -1,0 +1,29 @@
+.blog {
+  padding-bottom: 50px;
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0px;
+    color: $color;
+    font-family: 'Poppins', sans-serif;
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item {
+      width: 370px;
+      margin: 50px 0px;
+      h3 {
+        font-size: 25px;
+        margin: 10px 0px;
+        color: $color;
+      }
+      a {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+}

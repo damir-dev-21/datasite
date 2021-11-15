@@ -1,0 +1,72 @@
+.stackTech {
+  padding: 90px 0px;
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 90px;
+    color: $color;
+    font-family: 'Poppins', sans-serif;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__static {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      &-item {
+        max-width: 600px;
+        width: 100%;
+        transform: scale(0);
+
+        transition: all 0.8s ease 0.2s;
+        h2 {
+          font-size: 27px;
+          padding: 20px 0px;
+          border-bottom: 7px solid $color;
+          color: #e5e5e5;
+        }
+        .knowledge {
+          margin: 50px 0px;
+          h3 {
+            font-size: 22px;
+            color: #e5e5e5;
+          }
+        }
+        span {
+          display: flex;
+          margin: 15px 0px;
+          p {
+            font-size: 20px;
+            margin: 0px 10px;
+            background-color: rgb(241, 241, 241);
+            padding: 2px;
+            font-weight: bold;
+            color: #fca311;
+          }
+        }
+        p {
+          font-size: 20px;
+          color: #e5e5e5;
+        }
+      }
+      &-item._active {
+        transform: scale(1);
+      }
+    }
+    &__text {
+      margin: 40px auto;
+      transform: scale(0);
+      transition: all 0.8s ease 0.2s;
+      p {
+        font-size: 20px;
+        color: #e5e5e5;
+      }
+    }
+    &__text._active {
+      transform: scale(1);
+    }
+  }
+}

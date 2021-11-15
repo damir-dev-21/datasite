@@ -1,0 +1,49 @@
+.about {
+  padding: 80px 0px;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__left {
+      transform: translate(-150%, 0px);
+      opacity: 0;
+      transition: all 1.5s ease 0s;
+      h2 {
+        font-size: 50px;
+        color: $color;
+        font-family: 'Poppins', sans-serif;
+      }
+      p {
+        font-size: 24px;
+        margin: 50px 0px;
+        color: #e5e5e5;
+      }
+      li {
+        font-size: 20px;
+        margin: 0;
+        padding: 16px 0 16px 54px;
+        list-style: none;
+        background-image: url('https://datasite.uz/assets/img/check.svg');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 40px;
+        color: #e5e5e5;
+        font-family: 'Montserrat Alternates', sans-serif;
+      }
+    }
+    &__left._active {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
+    &__right {
+      transform: translate(-250%, 0px);
+      opacity: 0;
+      transition: all 1.5s ease 0s;
+    }
+    &__right._active {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
+  }
+}

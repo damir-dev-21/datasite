@@ -1,0 +1,70 @@
+.contactPage {
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      font-size: 60px;
+      color: $color;
+      text-align: center;
+      margin: 10% 0;
+    }
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      margin: 90px 0px;
+      .main-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background-color: #fca311;
+        width: 100%;
+        margin: 20px;
+        flex: 1;
+        i {
+          font-size: 60px;
+          text-align: center;
+          line-height: 100px;
+          color: #ffffff;
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          margin: 10px 0px;
+          transition: 0.3s linear;
+        }
+
+        &-content {
+          position: absolute;
+          text-align: center;
+          opacity: 0;
+          top: 10px;
+          h3 {
+            font-size: 30px;
+            color: $color;
+            margin: 10px 0px;
+          }
+          a {
+            font-size: 24px;
+          }
+          p {
+            color: $color;
+            font-size: 21px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+          }
+        }
+      }
+      .main-item:hover {
+        cursor: pointer;
+      }
+      .main-item:hover i {
+        transform: scale(1.5);
+        opacity: 0;
+      }
+      .main-item:hover div {
+        opacity: 1;
+        transition: 0.3s linear 0.3s;
+      }
+    }
+  }
+}
