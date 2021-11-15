@@ -8,7 +8,9 @@
 $bgColor: #efefef;
 $bgColor2: #000000;
 $color: #e5e5e5;
-$color2: #fca311;
+// $color2: #fca311;
+$color2: #4682B4;
+
 $color3: #14213d;
 
 p {
@@ -21,7 +23,9 @@ h2 {
 }
 
 .wrapper {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  // background: radial-gradient(ellipse at bottom, #206bc0 0%, #1338f1 100%);
+  background: radial-gradient(ellipse at bottom, #3e4d5d 0%, #4682B4 100%);
 }
 
 a {
@@ -48,7 +52,7 @@ a {
   font-size: 22px;
   width: 50px;
   height: 50px;
-  background: #fca311;
+  background: #4682B4;
   color: white;
   border: none;
   cursor: pointer;
